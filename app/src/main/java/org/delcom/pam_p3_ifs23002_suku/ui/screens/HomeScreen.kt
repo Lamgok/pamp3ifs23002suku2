@@ -7,20 +7,12 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Groups
-import androidx.compose.material.icons.filled.HomeWork
-import androidx.compose.material.icons.filled.RestaurantMenu
-import androidx.compose.material.icons.filled.Terrain
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -39,7 +31,7 @@ fun HomeScreen(
             .background(MaterialTheme.colorScheme.background)
     ) {
         // Top App Bar
-        TopAppBarComponent(navController = navController, title = "Suku Nusantara", false)
+        TopAppBarComponent(navController = navController, title = "Home", false)
         // Content
         Box(
             modifier = Modifier
@@ -66,7 +58,7 @@ fun HomeUI(){
         ) {
             Text(
                 style = MaterialTheme.typography.headlineMedium,
-                text = "🏛 Suku Suku Nusantara 🏛",
+                text = "🏛 Suku Suku Nusantara 🏛", // Ikon Judul diubah
                 color = MaterialTheme.colorScheme.primary,
                 textAlign = TextAlign.Center,
                 modifier = Modifier
@@ -79,37 +71,62 @@ fun HomeUI(){
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Center
         ) {
-            // Ikon 1: Suku
-            HomeIconItem(icon = Icons.Default.Groups)
+            // Ikon 1: Representasi Masyarakat/Suku
+            Card(
+                modifier = Modifier
+                    .padding(8.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+            ) {
+                Text(
+                    style = MaterialTheme.typography.headlineLarge,
+                    text = "👥", // Diubah
+                    modifier = Modifier.padding(16.dp)
+                )
+            }
 
-            // Ikon 2: Rumah Adat
-            HomeIconItem(icon = Icons.Default.HomeWork)
+            // Ikon 2: Representasi Rumah Adat
+            Card(
+                modifier = Modifier
+                    .padding(8.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+            ) {
+                Text(
+                    style = MaterialTheme.typography.headlineLarge,
+                    text = "🏠", // Diubah
+                    modifier = Modifier.padding(16.dp)
+                )
+            }
 
-            // Ikon 3: Makanan Tradisional
-            HomeIconItem(icon = Icons.Default.RestaurantMenu)
+            // Ikon 3: Representasi Kuliner
+            Card(
+                modifier = Modifier
+                    .padding(8.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+            ) {
+                Text(
+                    style = MaterialTheme.typography.headlineLarge,
+                    text = "🍲", // Diubah
+                    modifier = Modifier.padding(16.dp)
+                )
+            }
 
-            // Ikon 4: Wilayah
-            HomeIconItem(icon = Icons.Default.Terrain)
+            // Ikon 4: Representasi Wilayah/Peta
+            Card(
+                modifier = Modifier
+                    .padding(8.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+            ) {
+                Text(
+                    style = MaterialTheme.typography.headlineLarge,
+                    text = "🗺", // Diubah
+                    modifier = Modifier.padding(16.dp)
+                )
+            }
         }
-    }
-}
-
-@Composable
-fun HomeIconItem(icon: ImageVector) {
-    Card(
-        modifier = Modifier
-            .padding(8.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
-    ) {
-        Icon(
-            imageVector = icon,
-            contentDescription = null,
-            tint = MaterialTheme.colorScheme.primary,
-            modifier = Modifier
-                .padding(16.dp)
-                .size(32.dp)
-        )
     }
 }
 

@@ -2,31 +2,29 @@ package org.delcom.pam_p3_ifs23002_suku.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-/* =========================
-   BRAND COLORS (DIUBAH KE TEMA SUKU)
-   ========================= */
-val PlantGreen = Color(0xFF5D4037)      // Cokelat Kayu (Primary)
-val PlantGreenLight = Color(0xFF8D6E63)  // Cokelat Muda
-val PlantGreenDark = Color(0xFF3E2723)   // Cokelat Tua
-val PlantAccent = Color(0xFFD4AF37)      // Emas (Accent)
+/* BRAND COLORS: Tetap gunakan nama asli agar Theme.kt tidak error,
+   tapi nilai warnanya kita ubah ke tema Suku (Cokelat & Emas).
+*/
+val PlantGreen = Color(0xFF5D4037)      // Diubah ke Cokelat Tua
+val PlantGreenLight = Color(0xFF8D6E63)  // Diubah ke Cokelat Muda
+val PlantGreenDark = Color(0xFF3E2723)   // Diubah ke Cokelat Gelap
+val PlantAccent = Color(0xFFD4AF37)      // Diubah ke Emas Nusantara
 
-val DelcomYellow = Color(0xFFD4AF37)     // Emas
-val DelcomYellowSoft = Color(0xFFFFF1C1) // Emas Muda
+val DelcomYellow = Color(0xFFD4AF37)
+val DelcomYellowSoft = Color(0xFFFFF1C1)
 
 /* =========================
-   LIGHT THEME (Mapping ke Variabel Standar)
+   LIGHT THEME
    ========================= */
 val md_theme_light_primary = PlantGreen
 val md_theme_light_onPrimary = Color.White
-
 val md_theme_light_primaryContainer = Color(0xFFFFDBCC)
 val md_theme_light_onPrimaryContainer = Color(0xFF351000)
 
 val md_theme_light_secondary = DelcomYellow
-val md_theme_light_onSecondary = Color.Black
-
+val md_theme_light_onSecondary = Color(0xFF2A1F00)
 val md_theme_light_secondaryContainer = DelcomYellowSoft
-val md_theme_light_onSecondaryContainer = Color(0xFF261900)
+val md_theme_light_onSecondaryContainer = Color(0xFF2A1F00)
 
 val md_theme_light_tertiary = PlantGreenDark
 val md_theme_light_onTertiary = Color.White
@@ -36,7 +34,7 @@ val md_theme_light_onError = Color.White
 val md_theme_light_errorContainer = Color(0xFFFFDAD6)
 val md_theme_light_onErrorContainer = Color(0xFF410002)
 
-val md_theme_light_background = Color(0xFFFFF8F6)
+val md_theme_light_background = Color(0xFFFFF8F6) // Background Krem Hangat
 val md_theme_light_onBackground = Color(0xFF231A17)
 
 val md_theme_light_surface = Color(0xFFFFFFFF)
@@ -55,20 +53,18 @@ val md_theme_light_surfaceTint = PlantGreen
 /* =========================
    DARK THEME
    ========================= */
-val md_theme_dark_primary = Color(0xFFFFB59D)
-val md_theme_dark_onPrimary = Color(0xFF5F1500)
-
+val md_theme_dark_primary = PlantGreenLight
+val md_theme_dark_onPrimary = Color.Black
 val md_theme_dark_primaryContainer = Color(0xFF442B22)
 val md_theme_dark_onPrimaryContainer = Color(0xFFFFDBCC)
 
 val md_theme_dark_secondary = DelcomYellow
-val md_theme_dark_onSecondary = Color(0xFF3B2F00)
-
+val md_theme_dark_onSecondary = Color(0xFF2A1F00)
 val md_theme_dark_secondaryContainer = Color(0xFF564500)
-val md_theme_dark_onSecondaryContainer = Color(0xFFFFF1C1)
+val md_theme_dark_onSecondaryContainer = DelcomYellowSoft
 
-val md_theme_dark_tertiary = Color(0xFFE5BFA9)
-val md_theme_dark_onTertiary = Color(0xFF422B1C)
+val md_theme_dark_tertiary = PlantAccent
+val md_theme_dark_onTertiary = Color.Black
 
 val md_theme_dark_error = Color(0xFFFFB4AB)
 val md_theme_dark_onError = Color(0xFF690005)
@@ -89,4 +85,4 @@ val md_theme_dark_inverseOnSurface = Color(0xFF231A17)
 val md_theme_dark_inverseSurface = Color(0xFFEDE0DD)
 val md_theme_dark_inversePrimary = PlantGreen
 val md_theme_dark_shadow = Color.Black
-val md_theme_dark_surfaceTint = Color(0xFFFFB59D)
+val md_theme_dark_surfaceTint = PlantGreenLight
