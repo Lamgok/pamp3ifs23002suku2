@@ -1,32 +1,32 @@
-
 package org.delcom.pam_p3_ifs23002_suku.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
 /* =========================
-   BRAND COLORS (PLANT THEME)
+   BRAND COLORS (DIUBAH KE TEMA SUKU)
    ========================= */
-val PlantGreen = Color(0xFF2E7D32)      // Hijau natural untuk tanaman
-val PlantGreenLight = Color(0xFF4CAF50)  // Hijau lebih terang
-val PlantGreenDark = Color(0xFF1B5E20)   // Hijau lebih gelap
-val PlantAccent = Color(0xFF8BC34A)      // Hijau cerah sebagai aksen
+val PlantGreen = Color(0xFF5D4037)      // Cokelat Kayu (Primary)
+val PlantGreenLight = Color(0xFF8D6E63)  // Cokelat Muda
+val PlantGreenDark = Color(0xFF3E2723)   // Cokelat Tua
+val PlantAccent = Color(0xFFD4AF37)      // Emas (Accent)
 
-val DelcomYellow = Color(0xFFFFC107)
-val DelcomYellowSoft = Color(0xFFFFE082)
+val DelcomYellow = Color(0xFFD4AF37)     // Emas
+val DelcomYellowSoft = Color(0xFFFFF1C1) // Emas Muda
+
 /* =========================
-   LIGHT THEME (PLANT THEME)
+   LIGHT THEME (Mapping ke Variabel Standar)
    ========================= */
 val md_theme_light_primary = PlantGreen
 val md_theme_light_onPrimary = Color.White
 
-val md_theme_light_primaryContainer = Color(0xFFC8E6C9)
-val md_theme_light_onPrimaryContainer = Color(0xFF002107)
+val md_theme_light_primaryContainer = Color(0xFFFFDBCC)
+val md_theme_light_onPrimaryContainer = Color(0xFF351000)
 
 val md_theme_light_secondary = DelcomYellow
-val md_theme_light_onSecondary = Color(0xFF2A1F00)
+val md_theme_light_onSecondary = Color.Black
 
 val md_theme_light_secondaryContainer = DelcomYellowSoft
-val md_theme_light_onSecondaryContainer = Color(0xFF2A1F00)
+val md_theme_light_onSecondaryContainer = Color(0xFF261900)
 
 val md_theme_light_tertiary = PlantGreenDark
 val md_theme_light_onTertiary = Color.White
@@ -36,57 +36,57 @@ val md_theme_light_onError = Color.White
 val md_theme_light_errorContainer = Color(0xFFFFDAD6)
 val md_theme_light_onErrorContainer = Color(0xFF410002)
 
-val md_theme_light_background = Color(0xFFF8FBF8)
-val md_theme_light_onBackground = Color(0xFF121212)
+val md_theme_light_background = Color(0xFFFFF8F6)
+val md_theme_light_onBackground = Color(0xFF231A17)
 
-val md_theme_light_surface = Color(0xFFFAFFFA)
-val md_theme_light_onSurface = Color(0xFF121212)
+val md_theme_light_surface = Color(0xFFFFFFFF)
+val md_theme_light_onSurface = Color(0xFF231A17)
 
-val md_theme_light_surfaceVariant = Color(0xFFE3EBE3)
-val md_theme_light_onSurfaceVariant = Color(0xFF444944)
+val md_theme_light_surfaceVariant = Color(0xFFF4DED5)
+val md_theme_light_onSurfaceVariant = Color(0xFF53433F)
 
-val md_theme_light_outline = Color(0xFF747C74)
-val md_theme_light_inverseOnSurface = Color(0xFFF1F1F1)
-val md_theme_light_inverseSurface = Color(0xFF1E1E1E)
-val md_theme_light_inversePrimary = PlantGreenDark
+val md_theme_light_outline = Color(0xFF85736E)
+val md_theme_light_inverseOnSurface = Color(0xFFFBEEEB)
+val md_theme_light_inverseSurface = Color(0xFF362F2D)
+val md_theme_light_inversePrimary = Color(0xFFFFB59D)
 val md_theme_light_shadow = Color.Black
 val md_theme_light_surfaceTint = PlantGreen
 
 /* =========================
-   DARK THEME (PLANT THEME)
+   DARK THEME
    ========================= */
-val md_theme_dark_primary = PlantGreenLight
-val md_theme_dark_onPrimary = Color.Black
+val md_theme_dark_primary = Color(0xFFFFB59D)
+val md_theme_dark_onPrimary = Color(0xFF5F1500)
 
-val md_theme_dark_primaryContainer = Color(0xFF1A4F1D)
-val md_theme_dark_onPrimaryContainer = Color(0xFFC8E6C9)
+val md_theme_dark_primaryContainer = Color(0xFF442B22)
+val md_theme_dark_onPrimaryContainer = Color(0xFFFFDBCC)
 
 val md_theme_dark_secondary = DelcomYellow
-val md_theme_dark_onSecondary = Color(0xFF2A1F00)
+val md_theme_dark_onSecondary = Color(0xFF3B2F00)
 
-val md_theme_dark_secondaryContainer = Color(0xFF5A4600)
-val md_theme_dark_onSecondaryContainer = DelcomYellowSoft
+val md_theme_dark_secondaryContainer = Color(0xFF564500)
+val md_theme_dark_onSecondaryContainer = Color(0xFFFFF1C1)
 
-val md_theme_dark_tertiary = PlantAccent
-val md_theme_dark_onTertiary = Color.Black
+val md_theme_dark_tertiary = Color(0xFFE5BFA9)
+val md_theme_dark_onTertiary = Color(0xFF422B1C)
 
 val md_theme_dark_error = Color(0xFFFFB4AB)
 val md_theme_dark_onError = Color(0xFF690005)
 val md_theme_dark_errorContainer = Color(0xFF93000A)
 val md_theme_dark_onErrorContainer = Color(0xFFFFDAD6)
 
-val md_theme_dark_background = Color(0xFF0E120E)
-val md_theme_dark_onBackground = Color(0xFFEAEAEA)
+val md_theme_dark_background = Color(0xFF231A17)
+val md_theme_dark_onBackground = Color(0xFFEDE0DD)
 
-val md_theme_dark_surface = Color(0xFF121812)
-val md_theme_dark_onSurface = Color(0xFFEAEAEA)
+val md_theme_dark_surface = Color(0xFF1B110E)
+val md_theme_dark_onSurface = Color(0xFFEDE0DD)
 
-val md_theme_dark_surfaceVariant = Color(0xFF3A423A)
-val md_theme_dark_onSurfaceVariant = Color(0xFFC4C7C4)
+val md_theme_dark_surfaceVariant = Color(0xFF53433F)
+val md_theme_dark_onSurfaceVariant = Color(0xFFD8C2BB)
 
-val md_theme_dark_outline = Color(0xFF8E918E)
-val md_theme_dark_inverseOnSurface = Color(0xFF121212)
-val md_theme_dark_inverseSurface = Color(0xFFEAEAEA)
+val md_theme_dark_outline = Color(0xFFA08D87)
+val md_theme_dark_inverseOnSurface = Color(0xFF231A17)
+val md_theme_dark_inverseSurface = Color(0xFFEDE0DD)
 val md_theme_dark_inversePrimary = PlantGreen
 val md_theme_dark_shadow = Color.Black
-val md_theme_dark_surfaceTint = PlantGreenLight
+val md_theme_dark_surfaceTint = Color(0xFFFFB59D)
